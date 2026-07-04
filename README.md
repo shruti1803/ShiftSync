@@ -1,4 +1,4 @@
-# ShiftSync — Internal HR Operations Portal
+# ShiftSync — Internal Ops Portal
 
 > 🚀 **Live API:** _Coming soon (Railway deployment)_
 > 📖 **Swagger Docs:** _Coming soon_
