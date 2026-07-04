@@ -1,0 +1,21 @@
+# Maven compiled output
+target/
+
+# IntelliJ files
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Environment / Secrets
+.env
+application-prod.yml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
