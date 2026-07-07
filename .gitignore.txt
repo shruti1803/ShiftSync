@@ -19,3 +19,6 @@ Thumbs.db
 # Logs
 *.log
 logs/
+
+Description - Supported and maintained enterprise Ubuntu-based Linux environments for Cisco employees while developing internal tools to automate team operations and improve workflow.
+
