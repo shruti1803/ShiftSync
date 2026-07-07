@@ -254,6 +254,9 @@ Copy the `accessToken`, click **Authorize** in Swagger, paste it in — all endp
 
 ---
 
+> 🚀 **Live API:** https://your-render-url.onrender.com
+> 📖 **Swagger Docs:** https://your-render-url.onrender.com/swagger-ui.html
+> 🌐 **Frontend:** https://shift-sync-frontend-qyfq8gwvs-shrutis-projects-3ceafecb.vercel.app
 ## Author
 
 Built by Shruti Sinha — Linux Administrator @Wipro 
