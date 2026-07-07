@@ -11,7 +11,6 @@ import com.shiftsync.repository.ShiftScheduleRepository;
 import com.shiftsync.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -62,8 +61,6 @@ public class ShiftService {
 
         return toResponse(schedule, todaysHolidays, isUsShiftEmployee);
     }
-
-    @Cacheable(value = "teamShifts", key = "#teamName + '-' + #from + '-' + #to")
     public List<ShiftScheduleResponse> getTeamShifts(String teamName, LocalDate from, LocalDate to) {
         List<ShiftSchedule> schedules = shiftScheduleRepository.findTeamShiftsInRange(teamName, from, to);
         List<Holiday> holidays = holidayRepository.findByHolidayDateBetweenOrderByHolidayDate(from, to);

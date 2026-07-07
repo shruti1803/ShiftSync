@@ -4,7 +4,6 @@ import com.shiftsync.dto.response.HolidayResponse;
 import com.shiftsync.entity.Holiday;
 import com.shiftsync.repository.HolidayRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -16,8 +15,6 @@ import java.util.stream.Collectors;
 public class HolidayService {
 
     private final HolidayRepository holidayRepository;
-
-    @Cacheable(value = "holidays", key = "#from + '-' + #to")
     public List<HolidayResponse> getAllHolidays(LocalDate from, LocalDate to) {
         return holidayRepository.findByHolidayDateBetweenOrderByHolidayDate(from, to)
                 .stream().map(this::toResponse).collect(Collectors.toList());
