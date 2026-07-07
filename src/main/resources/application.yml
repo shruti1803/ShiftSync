@@ -9,8 +9,8 @@ spring:
 
   datasource:
     url: ${DB_URL:jdbc:postgresql://localhost:5432/ShiftSync}
-    username: postgres
-    password: Shru
+    username: shiftsync_db_z62u_user
+    password: IPJEOoq2EN7RWHoPTFfuX3eNiZBm4h1i
     driver-class-name: org.postgresql.Driver
 
   jpa:
