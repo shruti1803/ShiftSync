@@ -253,10 +253,9 @@ Copy the `accessToken`, click **Authorize** in Swagger, paste it in — all endp
 - **RFC 7807 error responses** — all errors return a consistent `ProblemDetail` JSON structure, never raw stack traces.
 
 ---
-
-> 🚀 **Live API:** https://your-render-url.onrender.com
-> 📖 **Swagger Docs:** https://your-render-url.onrender.com/swagger-ui.html
-> 🌐 **Frontend:** https://shift-sync-frontend-qyfq8gwvs-shrutis-projects-3ceafecb.vercel.app
+> 🌐 **Live App:** https://shift-sync-frontend-lemon.vercel.app
+> 📖 **Backend API:** https://shiftsync-backend-zco3.onrender.com/swagger-ui.html
+> 💻 **Backend Repo:** https://github.com/shruti1803/ShiftSync
 ## Author
 
 Built by Shruti Sinha — Linux Administrator @Wipro 
